@@ -1,0 +1,21 @@
+.linkWrapper {
+    width: fit-content;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    color: var(--active-link);
+}
+
+.active {
+    color: var(--active-link);
+}

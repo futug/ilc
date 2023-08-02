@@ -1,0 +1,121 @@
+.headerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px 0;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+}
+
+.logo {
+    transition: all 0.3s ease-in-out;
+    @media (max-width: 525px) {
+        width: 90px;
+    }
+}
+
+.logoSlogan {
+    max-width: 227px;
+    font-size: 12px;
+    line-height: 167%;
+    color: var(--primary-headers-dark);
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    @media (max-width: 525px) {
+        gap: 8px;
+    }
+}
+
+.phone {
+    font-size: 16px;
+    color: var(--primary-headers-dark);
+    font-weight: 700;
+    text-decoration: none;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.buttonWrapper {
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.burger {
+    display: block;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 7px;
+    width: 50px;
+    height: 50px;
+    background-color: #dee6ef;
+    position: relative;
+    overflow: hidden;
+    display: none;
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.burger > span {
+    width: 22px;
+    height: 2px;
+    background-color: var(--burger-inner);
+    border-radius: 2px;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, #4614e8 0%, #bca7ff 100%), #7247ff;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.burger:hover::after {
+    opacity: 0.6;
+}
+
+.burger:hover > span {
+    background-color: var(--primary-background);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.logInButton {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    &:hover {
+        filter: brightness(1.2);
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+    }
+}

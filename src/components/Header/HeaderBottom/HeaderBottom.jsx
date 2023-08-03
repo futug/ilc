@@ -6,11 +6,11 @@ import { LINKS } from "../../../utils/constants";
 
 const HeaderBottom = () => {
     return (
-        <div className={styles.headerBottom}>
+        <nav className={styles.headerBottom}>
             {LINKS.map((link) => (
                 <NavLink key={link.id} name={link.name} />
             ))}
-        </div>
+        </nav>
     );
 };
 

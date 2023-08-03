@@ -7,7 +7,7 @@
     background: radial-gradient(50% 50% at 50% 50%, rgba(205, 187, 239, 0.2) 0%, rgba(196, 196, 196, 0) 100%);
     z-index: -1;
     pointer-events: none;
-    @media (max-width: 525px) {
+    @media (max-width: 1280px) {
         display: none;
     }
 }

@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 48px 0;
+
+    @media (max-width: 525px) {
+        padding: 22px 0 0 0;
+    }
 }
 
 .headerLeft {

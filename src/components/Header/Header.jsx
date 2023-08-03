@@ -15,10 +15,10 @@ export const Header = () => {
         setMenuIsOpen(!menuIsOpen);
     };
     return (
-        <div className={styles.headerWrapper}>
+        <header className={styles.headerWrapper}>
             <div className={styles.headerDecor}></div>
             <HeaderTop menuIsOpen={menuIsOpen} handleMenuOpen={handleMenuOpen} />
             {breakpoint === "laptop" || breakpoint === "laptopL" ? <HeaderBottom /> : <MobileMenu menuIsOpen={menuIsOpen} handleMenuOpen={handleMenuOpen} />}
-        </div>
+        </header>
     );
 };
